@@ -1,0 +1,428 @@
+*{
+    box-sizing: border-box;
+}
+
+/*INITIALISATION D'UNE VARIABLE POUR LES COULEURS*/
+:root{
+    --color1:#d89584;
+    --color2:#f4f4f4;
+    --color3:#656565;
+}
+
+/*zone du cover*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    line-height: 1.5;
+}
+
+div.cover{
+    background: url(cover_overlay.png)no-repeat center/100% 100%,url(cover.jpg)no-repeat center/cover;
+    height: 360px;
+    position: relative;
+}
+
+img.cover-profile{
+    height: 100px;
+    position: relative;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: 50px;
+    border: 4px solid white;
+    border-radius: 50%;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-size:42px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+h2{
+    text-align: center;
+    font-size: 34px;
+    margin-top: 0;
+}
+
+div.cover p{
+    color: lightgray;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+ /*zone du cover infos contact*/
+div.cover-contact{
+     /*background-color: #ff000080;*/
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    border-left: 4px solid var(--color1);
+    padding-left: 8px;
+}
+
+div.cover-contact p{
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+div.cover-contact p:first-child{
+    margin-bottom: 14px;
+}
+
+div.cover-contact a{
+    text-align: left;
+    color: white;
+    font-size: 14px;
+}
+
+/*zone du cover PARTIE DU BOUTON ME CONTACTER*/
+a.me-contacter{
+    color: var(--color1);
+    text-transform: uppercase;
+    border: 3px solid var(--color1);
+    padding: 8px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #00000040;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+a.me-contacter:hover{
+    color: white;
+    border: 3px solid white;
+}
+
+iframe{
+    width: 100%;
+    border: none;
+    height: 500px;
+}
+
+/*ZONE SECTION*/
+div.section{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+
+div.section img{
+    border: 2px solid var(--color3);
+    width: 450px;
+}
+
+/*ZONE SECTIONS GRISE 1*/
+div.section-grise1{
+    background: url(triangle2white.svg)no-repeat center bottom/100%;
+    background-color: var(--color2);
+    padding-bottom: 70px;
+}
+
+div.sep{
+    border: 1px solid;
+    height: 1px;
+    width: 150px;
+    color: #979797;
+    position: relative;
+    left: 50%;
+    margin-left: -75px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+div.section-grise1 p{
+     font-size: 22px;
+     text-align: center;
+     max-width: 450px;
+     color: var(--color3);
+     margin-right: auto;
+     margin-left: auto;
+}
+
+div.section-grise2{
+    background: url(triangle1white.svg)no-repeat center top/100%;
+    background-color: var(--color2);
+    padding-top: 120px;
+}
+
+.img.col-contenu{
+    width: 40%;
+}
+
+div.col-contenu{
+    width: 60%;
+    padding-left: 10px;
+}
+
+div.float-right{
+    float: right;
+}
+
+div.texte-avec-ligne-verticale{
+    border-left: 4px solid var(--color1);
+    padding-left: 8px;
+    height: 50px;
+    display: inline-block;
+}
+
+div.texte-avec-ligne-verticale p{
+    margin-top: 0;
+}
+
+.Barre-verticale{
+    height: 50px;
+    width: 3px;
+    background-color: var(--color1);
+    margin-right: 10px;
+}
+
+div.section-grise2 .portfolio{
+    float: right;
+}
+
+.col-portfolio{
+    width: 48% ;
+}
+
+div.section .frame{
+    margin: 30px 50px;
+    padding: 20px 30px;
+    background-color: white;
+    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+.frame img{
+    border: 4px solid black;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+div.frame img{
+    width : 275px;
+}
+
+p.frame-title{
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+/*PORTFOLIO*/
+
+.portfolio-header{
+    height: 90px;
+    background: url(./header.jpg)no-repeat center/cover;
+    position: relative;
+    display: flex;
+    justify-content: left;
+}
+
+.portfolio-Barre-verticale2{
+    position: absolute;
+    height: 40px;
+    width: 3px;
+    background-color: var(--color1);
+    margin-left: 15px;
+    margin-top: 30px;
+}
+
+.portfolio-header-title{
+    position: absolute;
+    color: white;
+    margin-top: 5px;
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-header-title P{
+    text-align: center;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.portfolio-header a{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.portfolio h1{
+    color: black;
+    font-size: 46px;
+    margin-left: -2px;
+}
+
+.portfolio h2{
+    font-size: 26px;
+    font-weight: normal;
+}
+
+/*PORTFOLIO APPLICATION*/
+.portfolio-image-application{
+    text-align: center;
+    margin-top:30px;
+}
+
+/*PORTFOLIO MOBILE RESTAURANT*/
+.portfolio-image-restaurant{
+    text-align: center;
+    margin-top:30px;
+}
+
+.section-grise1 a{
+    color: var(--color1);
+}
+
+.section-grise1 a:hover{
+    color: var(--color3);
+}
+
+.portfolio-section-image{
+    width: 70%;
+    max-width: 450px;
+}
+
+td a:hover{
+    color: var(--color1);
+    text-decoration: none;
+    text-shadow: 1px 1px var(--color3) ;
+}
+
+div.display-mobile{
+    display: none;
+}
+
+
+ /* RESPONSIVE DESIGN */
+  /* For mobile phones: */
+
+@media only screen and (max-width: 767px) {
+    img.cover-profile{
+    height: 90px;
+    margin-top: 75px;
+}
+
+h1{
+    font-size:38px;
+    margin-top: 6px;
+    margin-bottom: 0px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+div.cover p{
+    margin-top: 2px;
+    font-size: 13px;
+}
+
+div.section{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+div.section img{
+    width: 340px;
+}
+
+
+.img.col-contenu{
+    width: 100%;
+}
+
+div.col-contenu{
+    width: 100%;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+div.section-grise1{
+    padding-bottom: 20px;
+}
+
+div.section-grise1 p{
+    font-size: 20px;
+}
+
+div.section-grise2{
+    padding-top: 70px;
+}
+
+div.float-right{
+    float: left;
+}
+
+.col-portfolio{
+    width: 100% ;
+}
+
+div.section .frame{
+    margin: 0px 0px;
+    padding: 0px 0px;
+    box-shadow: none;
+}
+
+div.frame img{
+    width : 130px;
+    margin-right: 20px;
+}
+
+div.texte-avec-ligne-verticale p{
+   font-size: 14px;
+}
+
+p.frame-title{
+    font-size: 28px;
+}
+
+iframe{
+    height: 310px;
+}
+
+/*PORTFOLIO-HEADER-MOBILE */
+.portfolio-header-title P{
+    font-size: 20px;
+}
+
+.portfolio-Barre-verticale2{
+    margin-top: 21px;
+}
+
+a.me-contacter{
+    padding: 5px 13px;
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+div.section .portfolio-image-application img{
+    width: 100%;
+}
+
+div.section .portfolio-image-restaurant  img{
+    width: 100%;
+}
+
+.portfolio h1{
+    font-size: 40px;
+}
+
+.portfolio h2{
+    font-size: 16px;
+}
+
+div.display-mobile{
+    display: block;
+}
+}
